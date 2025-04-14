@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.karimdao.com</title>
+    <link rel="stylesheet" href="accueil.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.29/jspdf.plugin.autotable.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img class="image" src="photo.jpg" alt="DAO KARIM">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#presentation" class="active">PRESENTATION</a></li>
+                <li><a href="#diplomes">DIPLOMATION</a></li>
+                <li><a href="#competences">COMPETENCES</a></li>
+                <li><a href="#experiences">EXPERIENCES</a></li>
+                <li><a href="#loisirs">LOISIRS</a></li>
+                <li><a href="#apropos">A PROPOS</a></li>
+            </ul>
+        </nav>
+        <div class="search-container">
+            <input type="text" placeholder="Rechercher..." class="search-bar">
+            <i class="fas fa-search search-icon"></i>
+        </div>
+    </header>
+
+    <main>
+        <section id="presentation" class="hero">
+            <div class="hero-content">
+                <h1>DAO KARIM</h1>
+                <p>Étudiant en Mathematiques-Informatiques</p>
+                <div class="presentation-content">
+                    <div class="presentation-section">
+                        <h3>Informations Personnelles</h3>
+                        <p>Né le 08 décembre 2000 à la maternité ivoiro-libanaise de Treichville</p>
+                        <p>J'ai passé la plus grande partie de mon enfance à Abidjan et j'ai grandi à Treichville</p>
+                        <p>Célibataire et sans enfant</p>
+                    </div>
+                    <div class="presentation-section">
+                        <h3>Profil</h3>
+                        <p>Personne dynamique, travailleuse et adaptative</p>
+                        <p>Solide base en Mathématiques, Physique et Informatique</p>
+                    </div>
+                    <div class="presentation-section">
+                        <h3>Objectifs</h3>
+                        <p>Étudiant passionné par l'informatique et le développement web</p>
+                        <p>Je m'efforce constamment d'améliorer mes compétences et d'apprendre de nouvelles technologies</p>
+                    </div>
+                </div>
+                <div class="cv-buttons">
+                    <a href="moncv.pdf" download class="btn btn-download">
+                        <i class="fas fa-file-pdf"></i> Télécharger mon CV
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="photo.jpg" alt="DAO KARIM">
+            </div>
+        </section>
+
+        <section id="diplomes" class="section">
+            <h2>Diplômes et Formations</h2>
+            <div class="diplomes-container">
+                <div class="diplome-item">
+                    <h3>COLLEGE VOLTAIRE TREICHVILLE</h3>
+                    <p class="institution">BEPC</p>
+                    <p class="date">2016</p>
+                </div>
+                <div class="diplome-item">
+                    <h3>LYCEE CLASSIQUE D'ABIDJAN</h3>
+                    <p class="institution">BACCALAURÉAT</p>
+                    <p class="date">2020</p>
+                </div>
+                <div class="diplome-section">
+                    <h3 class="section-title">UNIVERSITE FELIX HOUPHOUET BOIGNY</h3>
+                    <div class="diplome-item">
+                        <h3>LICENCE 1 MATHEMATIQUES-INFORMATIQUE</h3>
+                        <p class="date">2022-2023</p>
+                    </div>
+                    <div class="diplome-item">
+                        <h3>LICENCE 2 SCIENCE INFORMATIQUE</h3>
+                        <p class="date">2023-2024</p>
+                    </div>
+                    <div class="diplome-item">
+                        <h3>LICENCE 3 SCIENCE INFORMATIQUE</h3>
+                        <p class="date">2024-2025 (En cours)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="competences" class="section">
+            <h2>Compétences</h2>
+            <div class="competences-container">
+                <div class="competence-item">
+                    <div class="competence-info">
+                        <span class="competence-name">MATHEMATIQUES</span>
+                        <span class="competence-level">65%</span>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: 0%"></div>
+                    </div>
+                </div>
+                <div class="competence-item">
+                    <div class="competence-info">
+                        <span class="competence-name">PHYSIQUE</span>
+                        <span class="competence-level">50%</span>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: 0%"></div>
+                    </div>
+                </div>
+                <div class="competence-item">
+                    <div class="competence-info">
+                        <span class="competence-name">Python</span>
+                        <span class="competence-level">70%</span>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: 0%"></div>
+                    </div>
+                </div>
+                <div class="competence-item">
+                    <div class="competence-info">
+                        <span class="competence-name">C</span>
+                        <span class="competence-level">40%</span>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: 0%"></div>
+                    </div>
+                </div>
+                <div class="competence-item">
+                    <div class="competence-info">
+                        <span class="competence-name">HTML</span>
+                        <span class="competence-level">40%</span>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: 0%"></div>
+                    </div>
+                </div>
+                <div class="competence-item">
+                    <div class="competence-info">
+                        <span class="competence-name">CSS</span>
+                        <span class="competence-level">30%</span>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: 0%"></div>
+                    </div>
+                </div>
+                <div class="competence-item">
+                    <div class="competence-info">
+                        <span class="competence-name">JavaScript</span>
+                        <span class="competence-level">20%</span>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: 0%"></div>
+                    </div>
+                </div>
+                <div class="competence-item">
+                    <div class="competence-info">
+                        <span class="competence-name">PHP</span>
+                        <span class="competence-level">10%</span>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: 0%"></div>
+                    </div>
+                </div>
+                <div class="competence-item">
+                    <div class="competence-info">
+                        <span class="competence-name">MySQL</span>
+                        <span class="competence-level">10%</span>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: 0%"></div>
+                    </div>
+                </div>
+                <div class="competence-item">
+                    <div class="competence-info">
+                        <span class="competence-name">C#</span>
+                        <span class="competence-level">10%</span>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: 0%"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experiences" class="section">
+            <h2>Expériences</h2>
+            <div class="experiences-container">
+                <div class="experience-item">
+                    <h3>Développement des interfaces d'authentification d'une application mobile de gestion de liste de présence</h3>
+                    <p class="date">2024</p>
+                    <p class="description">Conception et développement des interfaces d'authentification de l'application mobile, incluant :
+                        <ul class="experience-details">
+                            <li>Interface de connexion avec validation des champs et gestion des erreurs</li>
+                            <li>Interface d'inscription avec formulaire complet et validation des données</li>
+                            <li>Interface de récupération de mot de passe avec envoi de lien de réinitialisation</li>
+                            <li>Design responsive et adaptatif pour différents appareils mobiles</li>
+                            <li>Intégration des icônes et animations pour une meilleure expérience utilisateur</li>
+                            <li>Gestion des états de connexion et des sessions utilisateur</li>
+                        </ul>
+                    </p>
+                </div>
+                <div class="experience-item">
+                    <h3>Répétiteur à domicile</h3>
+                    <p class="date">Depuis 2021</p>
+                    <p class="description">Enseignement des matières scientifiques à des élèves du secondaire</p>
+                </div>
+                <div class="experience-item">
+                    <h3>Participation à l'opération E-Militant RLE-RHDP</h3>
+                    <p class="date">2024</p>
+                    <p class="description">Participation active à la campagne de sensibilisation</p>
+                </div>
+                <div class="experience-item">
+                    <h3>Agent de recensement CEI</h3>
+                    <p class="date">2024</p>
+                    <p class="description">Participation au processus de recensement électoral</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="loisirs" class="section">
+            <h2>Loisirs</h2>
+            <div class="loisirs-container">
+                <div class="loisir-item">
+                    <i class="fas fa-futbol"></i>
+                    <h3>Football</h3>
+                </div>
+                <div class="loisir-item">
+                    <i class="fas fa-code"></i>
+                    <h3>Programmation</h3>
+                </div>
+                <div class="loisir-item">
+                    <i class="fas fa-tools"></i>
+                    <h3>Bricolage</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="apropos" class="section">
+            <h2>À Propos</h2>
+           
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Vous pouvez me contacter via les réseaux sociaux suivants :</p>
+                <div class="social-links">
+                    <a href="https://m.me/karimdao" target="_blank" title="Messenger">
+                        <i class="fa-brands fa-facebook-messenger"></i>
+                    </a>
+                    <a href="https://wa.me/2250101625160" target="_blank" title="WhatsApp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="mailto:kamssone7@gmail.com" title="Email">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Portfolio DAO KARIM. Tous droits réservés.</p>
+                <p>Développé par <span>DAO KARIM</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="accueil.js"></script>
+</body>
+</html>

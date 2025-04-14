@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentification - Portfolio DAO KARIM</title>
+    <link rel="stylesheet" href="accueil.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="auth-container">
+        <!-- Interface de Connexion -->
+        <div class="auth-box" id="login-box">
+            <h2>Connexion</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="login-email">Email</label>
+                    <input type="email" id="login-email" required>
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Mot de passe</label>
+                    <input type="password" id="login-password" required>
+                    <i class="fas fa-lock"></i>
+                </div>
+                <div class="form-options">
+                    <label class="remember-me">
+                        <input type="checkbox" id="remember-me">
+                        <span>Se souvenir de moi</span>
+                    </label>
+                    <a href="#" class="forgot-password" onclick="showForgotPassword()">Mot de passe oublié ?</a>
+                </div>
+                <button type="submit" class="btn btn-primary">Se connecter</button>
+                <p class="auth-switch">Pas encore de compte ? <a href="#" onclick="showRegister()">S'inscrire</a></p>
+            </form>
+        </div>
+
+        <!-- Interface d'Inscription -->
+        <div class="auth-box" id="register-box" style="display: none;">
+            <h2>Inscription</h2>
+            <form id="register-form">
+                <div class="form-group">
+                    <label for="register-name">Nom complet</label>
+                    <input type="text" id="register-name" required>
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="form-group">
+                    <label for="register-email">Email</label>
+                    <input type="email" id="register-email" required>
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="form-group">
+                    <label for="register-password">Mot de passe</label>
+                    <input type="password" id="register-password" required>
+                    <i class="fas fa-lock"></i>
+                </div>
+                <div class="form-group">
+                    <label for="register-confirm-password">Confirmer le mot de passe</label>
+                    <input type="password" id="register-confirm-password" required>
+                    <i class="fas fa-lock"></i>
+                </div>
+                <button type="submit" class="btn btn-primary">S'inscrire</button>
+                <p class="auth-switch">Déjà un compte ? <a href="#" onclick="showLogin()">Se connecter</a></p>
+            </form>
+        </div>
+
+        <!-- Interface de Récupération de mot de passe -->
+        <div class="auth-box" id="forgot-password-box" style="display: none;">
+            <h2>Récupération de mot de passe</h2>
+            <form id="forgot-password-form">
+                <div class="form-group">
+                    <label for="reset-email">Email</label>
+                    <input type="email" id="reset-email" required>
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <button type="submit" class="btn btn-primary">Envoyer le lien de réinitialisation</button>
+                <p class="auth-switch">Retour à la <a href="#" onclick="showLogin()">connexion</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function showLogin() {
+            document.getElementById('login-box').style.display = 'block';
+            document.getElementById('register-box').style.display = 'none';
+            document.getElementById('forgot-password-box').style.display = 'none';
+        }
+
+        function showRegister() {
+            document.getElementById('login-box').style.display = 'none';
+            document.getElementById('register-box').style.display = 'block';
+            document.getElementById('forgot-password-box').style.display = 'none';
+        }
+
+        function showForgotPassword() {
+            document.getElementById('login-box').style.display = 'none';
+            document.getElementById('register-box').style.display = 'none';
+            document.getElementById('forgot-password-box').style.display = 'block';
+        }
+
+        // Gestion des formulaires
+        document.getElementById('login-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Ajouter la logique de connexion ici
+        });
+
+        document.getElementById('register-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Ajouter la logique d'inscription ici
+        });
+
+        document.getElementById('forgot-password-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Ajouter la logique de récupération de mot de passe ici
+        });
+    </script>
+</body>
+</html> 
